@@ -1,0 +1,41 @@
+### create user
+POST http://127.0.0.1:5001/api/report HTTP/1.1
+content-type: application/json
+
+{
+    "username" : "jamie+001",
+    "full_name": "jamie",
+    "email" : "jamie@gmail.com",
+    "address" : "wqeqweqweqeqw",
+    "phone_number": "012345678",
+    "password" : "admin123"
+}
+
+### user login
+POST http://127.0.0.1:5001/api/login HTTP/1.1
+content-type: application/json
+
+{
+    "username" : "jamie+001",
+    "password" : "admin123"
+}
+
+
+### get users
+GET http://127.0.0.1:5001/api/users
+
+### get user by id
+GET http://127.0.0.1:5001/api/user/2
+
+### get user
+DELETE  http://127.0.0.1:5001/api/user/1
+
+### update user by id
+PUT http://127.0.0.1:5001/api/user/3 HTTP/1.1
+content-type: application/json
+
+{
+    "username" : "user-005",
+    "email" : "qwe5@gmail.com",
+    "password" : "admin123"
+}

@@ -1,0 +1,18 @@
+.submit-button {
+  margin-top: 100px;
+  background-color: #ffb815;
+  border: 2px solid black;
+  color: black;
+  box-shadow: 1px 1px;
+  width: 100%;
+  border-radius: 13px;
+  font-weight: bold;
+}
+.submit-button:hover,
+.submit-button:focus,
+.submit-button:active {
+  background-color: #ff9800;
+  border: 2px solid black;
+  color: black;
+  box-shadow: 1px 1px;
+}

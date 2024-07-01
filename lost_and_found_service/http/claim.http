@@ -1,0 +1,27 @@
+### create claim
+POST http://127.0.0.1:5001/api/claim HTTP/1.1
+content-type: application/json
+
+{
+    "report_id" : 1,
+    "claimer_id": 1,
+    "claimed_date" : "2024-05-04T00:00:00Z",
+    "status": "pending"
+}
+
+### get claims
+GET http://127.0.0.1:5001/api/claims
+
+### get claim by id
+GET http://127.0.0.1:5001/api/claim/2
+
+### delete claim
+DELETE http://127.0.0.1:5001/api/claim/1
+
+### update claim by id
+PUT http://127.0.0.1:5001/api/claim/3 HTTP/1.1
+content-type: application/json
+
+{
+    "status" : "approved"
+}

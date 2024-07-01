@@ -1,0 +1,31 @@
+### create report
+POST http://127.0.0.1:5001/api/report HTTP/1.1
+content-type: application/json
+
+{
+    "user_id" : 1,
+    "item_name": "Item 1",
+    "item_description" : "Description 1",
+    "report_date": "2024-05-04T00:00:00Z",
+    "status": "pending",
+    "location": "Library",
+    "category": "Electronics"
+}
+
+### get reports
+GET http://127.0.0.1:5001/api/reports
+
+### get report by id
+GET http://127.0.0.1:5001/api/report/2
+
+### delete report
+DELETE http://127.0.0.1:5001/api/report/1
+
+### update report by id
+PUT http://127.0.0.1:5001/api/report/3 HTTP/1.1
+content-type: application/json
+
+{
+    "item_name" : "Updated Item Name",
+    "status" : "resolved"
+}
